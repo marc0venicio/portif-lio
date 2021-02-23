@@ -366,7 +366,7 @@ nav{
 .title-section-galery{
   text-align: center;
   color: #fff;
-  margin: 50px auto 10px;
+  margin: 70px auto 50px;
 }
 
 .title-section-galery h2{
@@ -379,35 +379,89 @@ nav{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 5em;
-  min-height: 50vh;
 }
 
-.galery-box{
-  position: relative;
-  width: 200px;
-  transform-style: preserve-3d;
-  animation: animate 20s linear infinite;
-}
-
-@keyframes animate{
-  0%{
-    transform: perspective(1000px) rotateY(0deg);
-  }
-  100%{
-    transform: perspective(1000px) rotateY(360deg);
-  }
-}
-
-.galery-box span{
-  position: absolute;
-  top: 0;
-  left: 0;
+.swiper-container {
   width: 100%;
-  height: 100%;
-  transform-origin: center;
-  transform-style: preserve-3d;
-  transform: rotateY(calc(var(--i) *45deg)) translateZ(400px);
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  background: rgb(24, 24, 24);
+  box-shadow: rgb(24, 24, 24);
+}
 
+.swiper-slide:hover{
+  box-shadow: rgb(215, 15, 233) 0px 5px 15px;
+}
+
+/*seção das skills e competências*/
+.container-skills{
+  width: 1250px;
+  margin: auto;
+  padding: auto;
+  border-radius: 5px;
+  align-items: center;
+  background: rgb(24, 24, 24);
+}
+
+.section-skills{
+  margin: auto;
+  padding: auto;
+  color: #fff;
+  width: 680px;
+  display: block;
+  align-items: center;
+  padding: 2em 0;
+}
+
+.container-skills:hover{
+  box-shadow: rgb(215, 15, 233) 0px 5px 15px;
+}
+.section-skills span{
+  padding: 10px;
+  font-size: 1.2rem;
+  display: inline-block;
+  transition: .5s;
+}
+
+.section-skills span:hover{
+  background:rgb(215, 15, 233);
+  border-radius: 5px;
+}
+
+/*footer*/
+
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  margin-top: 20px;
+  background: rgb(24, 24, 24);
+}
+
+.logo-footer{
+  display: block;
+  padding: 0 15%;
+}
+
+.address {
+  font-size: 18px;
+  padding: 0 15%;
+  align-items: center;
+}
+
+.social-work{
+  padding: 0 0 0 15%;
+}
+
+.fab {
+  display: block;
+  float: left;
+}

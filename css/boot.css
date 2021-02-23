@@ -7,6 +7,12 @@
     font-size: 1.2rem;
 }
 
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 img{
     margin: 0;
     width: 100%;
@@ -20,5 +26,9 @@ a {
 
 header{
     margin: 0;
+}
+
+span, p {
+    font-size: .8em;
 }
 
