@@ -437,31 +437,44 @@ nav{
 
 /*footer*/
 
-.footer{
+
+.flex {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 90%;
+  margin: 50px auto auto;
+  background:rgb(24, 24, 24);
   color: #fff;
-  margin-top: 20px;
-  background: rgb(24, 24, 24);
-}
-
-.logo-footer{
-  display: block;
-  padding: 0 15%;
-}
-
-.address {
-  font-size: 18px;
-  padding: 0 15%;
   align-items: center;
 }
 
-.social-work{
-  padding: 0 0 0 15%;
+.flex > div {
+  flex: 1 1 200px;
+  margin: 30px 20px;
+  padding-bottom: 2em;
+  align-items: center;
 }
 
-.fab {
-  display: block;
-  float: left;
+.flex h2{
+  font-size: 18px;
+}
+
+.flex p, .flex li, .flex li a{
+  font-size: 14px;
+}
+
+.flex > div ul{
+  text-align: center;
+}
+.b-footer{
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background: rgb(12, 12, 12);
+}
+
+.b-footer p{
+  font-size: 14px;
 }
