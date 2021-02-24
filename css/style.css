@@ -140,6 +140,7 @@ nav{
     margin: 10px;
     border-radius: 5px;
     background: rgb(24, 24, 24);
+    box-shadow: rgb(215, 15, 233) 0px 5px 15px;
     transition: .5s;
     color: #fff;
 }
@@ -153,7 +154,7 @@ nav{
 }
 
 
-.fab {
+.section-blocks > div i {
     align-items: center;
     margin: 20px 140px auto;
     display: block;
@@ -201,96 +202,65 @@ nav{
   font-size: 2em;
 }
 
+/* seção da loja */
 
-.section-flex-store {
-  display: block;
+.block-store{
+  display: flex;
+  flex-wrap: wrap;
   max-width: 1250px;
   margin: 0 auto;
-  color: #fff;
-  text-align: justify;
-  position: relative;
 }
 
-.img-store img{
-  display: block;
-  position:relative;
-  float: left;
-  margin: 20px 50px;
-  width: 48%;
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  border-radius: 5px;
-  object-fit: cover;
-}
-
-.content-store{
-  display: block;
-  margin: 20px;
+.block-store > div{
+  flex: 1 1 200px;
+  margin: 20px 20px auto;
   border-radius: 5px;
 }
-.section-flex-store h2{
-  font-size: 1.5em;
+
+.block-store >div img{
+  border-radius: 5px;
 }
 
-.section-flex-store p{
+.block-store > div h2{
+  font-size: 1.2em;
+}
+
+.block-store p{
   font-size: 0.9em;
 }
 
-.btn-loja button{
-  height: 55px;
-  width: 170px;
+.block-store-icons{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  margin: 20px auto;
+  align-items: center;
+  text-align: center;
+}
+
+.block-store-icons > div{
+  flex: 1 1 50px;
+  margin: 10px;
+  background: rgb(24, 24, 24);
   border-radius: 5px;
-  border: none;
-  margin: 30px 10px 20px ;
-  border: 2px solid rgb(215, 15, 233);
-  font-size: 20px;
-  font-weight: 500;
-  padding: 0 10px;
-  cursor: pointer;
-  outline: none;
-  transition: all 0.3s ease;
-}
-.btn-loja button{
-  color: #fff;
-  background: none;
+  box-shadow: rgb(215, 15, 233) 0px 5px 15px;
+  transition: 0.5s;
 }
 
-.btn-loja button:hover{
-  color: #fff;
-  background: rgb(215, 15, 233);
+.block-store-icons > div:hover{
+  background: rgb(243, 13, 205);
 }
 
-.icons-store {
-  display: inline-block;
-  text-align: center;
-	width: 10%;
-  background-color: rgb(24, 24, 24);
-  border-radius: 5px;
-  margin-top: 20px;
-  margin-right: 15px;
-  padding: 15px;
-  transition: .5s;
+.block-store-icons > div *{
+  margin: 10px;
 }
 
-.icons-store:hover {
-  background-color: rgb(215, 15, 233);
+.block-store-icons > div h3{
+  font-size: 0.9em;
 }
 
-.fas{
+.block-store-icons > div p{
   font-size: 0.8em;
-}
-
-.icons-store h3{
-  font-size: 0.8em;
-  text-align: center;
-}
-
-.icons-store p{
-  font-size: .5rem;
-  text-align: center;
-  margin-top: 15px;
 }
 
 /*titulo da seção do MVP*/
@@ -299,7 +269,7 @@ nav{
   clear: both;
   text-align: center;
   color: #fff;
-  margin: 200px auto 100px;
+  margin: 100px auto 100px;
 }
 
 .title-section-mvp h2{
@@ -308,58 +278,7 @@ nav{
 
 /*seção do mvp*/
 
-.section-mvp{
-  background: url('../img/banner.jpg') no-repeat;
-	background-size: cover;
-  background-position: 0 50%;
-	position: relative;
-  height: 100vh;
-	padding: 10em 0;
-}
 
-.section-mvp h2, .section-mvp p {
-	width: 600px;
-	color: #FFF;
-}
-
-.section-mvp h2 {
-	font-size: 36px;
-	margin-bottom: 50px;
-}
-
-.section-mvp p {
-	font-size: 18px;
-	margin-bottom: 50px;
-}
-
-#sendjobs-inner h2, #sendjobs-inner p {
-  text-shadow: .5px .5px #000;
-  
-}
-
-.btn-mvp button{
-  height: 55px;
-  width: 170px;
-  border-radius: 5px;
-  border: none;
-  margin: 20px 10px 10px ;
-  border: 2px solid rgb(215, 15, 233);
-  font-size: 20px;
-  font-weight: 500;
-  padding: 0 10px;
-  cursor: pointer;
-  outline: none;
-  transition: all 0.3s ease;
-}
-.btn-mvp button{
-  color: #fff;
-  background: rgb(215, 15, 233);
-}
-
-.btn-mvp button:hover{
-  color: #fff;
-  background: none;
-}
 
 /*titulo da seção da galeria*/
 
@@ -437,6 +356,9 @@ nav{
 
 /*footer*/
 
+footer{
+  background: rgb(24, 24, 24);
+}
 
 .flex {
   display: flex;
