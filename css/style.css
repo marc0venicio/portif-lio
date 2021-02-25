@@ -282,8 +282,9 @@ nav{
   position: relative;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   padding: 40px auto;
-  min-height: 100vh;
+  align-items: center;
 }
 
 
@@ -301,7 +302,9 @@ nav{
   width: 900px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content:space-evenly;
+  align-items: center;
+  flex: 1 1 200px;
 }
 
 .section-mvp .card{
@@ -399,7 +402,37 @@ nav{
 }
 
 svg{
-  display: none;
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+svg circle{
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke-width: 10;
+  stroke: rgb(255, 255, 255, 0.05);
+  transform: translate(5px, 5px);
+  stroke-linecap: round;
+}
+
+svg circle:nth-child(2){
+  stroke: #fff;
+  stroke-dasharray: 440px;
+  stroke-dashoffset:440px;
+}
+
+.card:nth-child(1) svg circle:nth-child(2) {
+  stroke-dashoffset: calc(440px - (440px * 90)/100);
+}
+
+.card:nth-child(2) svg circle:nth-child(2) {
+  stroke-dashoffset: calc(440px - (440px * 82)/100);
+}
+
+.card:nth-child(3) svg circle:nth-child(2) {
+  stroke-dashoffset: calc(440px - (440px * 52)/100);
 }
 
 /*titulo da seção da galeria*/
@@ -441,54 +474,81 @@ svg{
   box-shadow: rgb(215, 15, 233) 0px 5px 15px;
 }
 
-/*seção das skills e competências*/
-.container-skills{
-  width: 1250px;
-  margin: auto;
-  padding: auto;
-  border-radius: 5px;
+/*title question*/
+
+.title-question{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-top:20em;
+  background: url('../img/banner-eu\ portifolio-sem-fundo.png');
+  background-size:100%;
+  background-position:bottom ;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  background: rgb(24, 24, 24);
 }
 
-.section-skills{
-  margin: auto;
-  padding: auto;
-  color: #fff;
-  width: 680px;
-  display: block;
-  align-items: center;
-  padding: 2em 0;
+.title-question #title-text{
+  position: relative;
+  font-size: 12em;
 }
 
-.container-skills:hover{
-  box-shadow: rgb(215, 15, 233) 0px 5px 15px;
-}
-.section-skills span{
-  padding: 10px;
-  font-size: 1.2rem;
-  display: inline-block;
-  transition: .5s;
+#title-text{
+  margin-bottom: 150px;
 }
 
-.section-skills span:hover{
-  background:rgb(215, 15, 233);
-  border-radius: 5px;
+.title-question .clouds{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.title-question .clouds img{
+  position: absolute;
+  bottom: 0;
+  max-width: 100%;
+  animation: animate calc(3s * var(--i)) linear infinite;
+}
+
+@keyframes animate{
+  0%{
+    opacity: 0;
+    transform: scale(1);
+  }
+  25%,75%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    transform: scale(3);
+  }
+}
+
+.clear{
+  position: relative;
+  padding: 75px 100px;
 }
 
 /*footer*/
 
 footer{
-  background: rgb(24, 24, 24);
+  background: rgb(255, 255, 255);
+  color: black;
 }
 
 .flex {
   display: flex;
   flex-wrap: wrap;
   max-width: 90%;
-  margin: 50px auto auto;
-  background:rgb(24, 24, 24);
-  color: #fff;
+  margin: 0 auto auto;
+  background:rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   align-items: center;
 }
 
@@ -497,10 +557,16 @@ footer{
   margin: 30px 20px;
   padding-bottom: 2em;
   align-items: center;
+  color: black;
 }
 
 .flex h2{
   font-size: 18px;
+  color: black;
+}
+
+.flex p, li, .flex li a{
+  color: black;
 }
 
 .flex p, .flex li, .flex li a{
@@ -513,7 +579,7 @@ footer{
 .b-footer{
   align-items: center;
   text-align: center;
-  color: #fff;
+  color: rgb(255, 255, 255);
   padding-top: 1em;
   padding-bottom: 1em;
   background: rgb(12, 12, 12);
