@@ -131,14 +131,16 @@ nav{
 .section-blocks {
     display: flex;
     flex-wrap: wrap;
-    max-width: 1000px;
-    margin: 50px auto;
+    margin: auto;
+    padding: auto;
+    max-width: 1200px; /**/
 }
 
 .section-blocks > div {
-    flex: 1 1 150px;
-    margin: 10px;
+    flex: 1 1 200px;
+    margin: 50px 20px;
     border-radius: 5px;
+    text-align: center;
     background: rgb(24, 24, 24);
     box-shadow: rgb(215, 15, 233) 0px 5px 15px;
     transition: .5s;
@@ -147,17 +149,12 @@ nav{
 
 .section-blocks > div:hover {
     flex: 1 1 150px;
-    margin: 10px;
-    border-radius: 5px;
     background: rgb(243, 13, 205);
     color: #fff;
 }
 
-
-.section-blocks > div i {
-    align-items: center;
-    margin: 20px 140px auto;
-    display: block;
+.section-blocks div > i{
+  margin: 20px auto 10px;
 }
 
 .section-blocks h3{
