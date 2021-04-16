@@ -22,8 +22,8 @@ nav{
     padding: 0 20px;
     font:bold;
   }
-  .menu .logo{
-    width: 200px;
+  .menu .logo img{
+    width: 170px;
   }
   .menu ul{
     display: inline-flex;
@@ -89,7 +89,7 @@ nav{
     font-size: 55px;
     font-weight: 600;
 }
-  .center .sub_title{
+.center .sub_title{
     color: #fff;
     font-size: 52px;
     font-weight: 600;
@@ -424,15 +424,15 @@ svg circle:nth-child(2){
 }
 
 .card:nth-child(1) svg circle:nth-child(2) {
-  stroke-dashoffset: calc(440px - (440px * 90)/100);
+  stroke-dashoffset: calc(440px - (440px * 100)/100);
 }
 
 .card:nth-child(2) svg circle:nth-child(2) {
-  stroke-dashoffset: calc(440px - (440px * 82)/100);
+  stroke-dashoffset: calc(440px - (440px * 100)/100);
 }
 
 .card:nth-child(3) svg circle:nth-child(2) {
-  stroke-dashoffset: calc(440px - (440px * 52)/100);
+  stroke-dashoffset: calc(440px - (440px * 100)/100);
 }
 
 /*titulo da seção da galeria*/
@@ -740,8 +740,9 @@ footer{
   .menu ul {
 		position: absolute;
 		display: none;
-    margin-top: -50px;
+    margin-top: -40px;
     margin-left: -8px;
+    font-size: 20px;
 	}
 
 	.menu ul li {
@@ -760,6 +761,209 @@ footer{
     margin-top: 0px;
 		display: block !important;
 	}
+  /*icones da loja*/
+
+  .block-store-icons > div{
+    flex: 1 1 130px;
+    margin: 10px;
+    background: rgb(24, 24, 24);
+    border-radius: 5px;
+    box-shadow: rgb(215, 15, 233) 0px 5px 15px;
+    transition: 0.5s;
+  }
+
+  .block-store-icons > div h3{
+    font-size: 0.85em;
+  }
+  
+  .block-store-icons > div p{
+    font-size: 0.5em;
+  }
+  /*parte das nuvens*/
+  .title-question{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-top:8em;
+    background: url('../img/banner-eu\ portifolio-sem-fundo.png');
+    background-size:100%;
+    background-position:bottom ;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title-question #title-text{
+    position: relative;
+    font-size: 5em;
+  }
+
+  #title-text{
+    margin-bottom: 75px;
+  }
+}
+
+@media (max-width: 375px){
+  /*menu mobile*/
+  html, body {
+	  overflow-x:hidden;
+	} 
+  nav {
+		height: 4em;
+	}
+  .btn-menumobile{
+    display: block !important;
+  }
+  
+  .logo img{
+    width: 150px;
+  }
+  .menu ul {
+		position: absolute;
+		display: none;
+    margin-top: -10px;
+    margin-left: -20px;
+    font-size: 15px;
+	}
+
+	.menu ul li {
+		display: block;
+    width: 400px;
+    align-items: center;
+		background-color: rgb(20, 20, 20);
+		border-top: 1px solid #CCC;
+    margin: 0px;
+	}
+
+	.menu ul li a {
+		font-size: 1em;
+	}
+  /*banner*/
+
+  .center .title{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 600;
+  }
+
+  .center .sub_title{
+    color: #fff;
+    font-size: 36px;
+    font-weight: 600;
+  }
+  .center .btns button{
+    height: 45px;
+    width: 100px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+	.open {
+    margin-top: 0px;
+		display: block !important;
+	}
+  /*icones da loja*/
+
+  .block-store-icons > div{
+    flex: 1 1 130px;
+    margin: 10px;
+    background: rgb(24, 24, 24);
+    border-radius: 5px;
+    box-shadow: rgb(215, 15, 233) 0px 5px 15px;
+    transition: 0.5s;
+  }
+
+  .block-store-icons > div h3{
+    font-size: 0.85em;
+  }
+  
+  .block-store-icons > div p{
+    font-size: 0.5em;
+  }
+  /*parte das nuvens*/
+  .title-question{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-top:8em;
+    background: url('../img/banner-eu\ portifolio-sem-fundo.png');
+    background-size:100%;
+    background-position:bottom ;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title-question #title-text{
+    position: relative;
+    font-size: 5em;
+  }
+
+  #title-text{
+    margin-bottom: 75px;
+  }
+}
+
+@media (max-width: 320px){
+  /*menu mobile*/
+  html, body {
+	  overflow-x:hidden;
+	} 
+  nav {
+		height: 4em;
+	}
+  .btn-menumobile{
+    display: block !important;
+  }
+  
+  .logo img{
+    width: 150px;
+  }
+  .menu ul {
+		position: absolute;
+		display: none;
+    margin-top: -10px;
+    margin-left: -20px;
+    font-size: 15px;
+	}
+
+	.menu ul li {
+		display: block;
+    width: 400px;
+    align-items: center;
+		background-color: rgb(20, 20, 20);
+		border-top: 1px solid #CCC;
+    margin: 0px;
+	}
+
+	.menu ul li a {
+		font-size: 1em;
+	}
+	.open {
+    margin-top: 0px;
+		display: block !important;
+	}
+
+  /*banner*/
+
+  .center .title{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 600;
+  }
+
+  .center .sub_title{
+    color: #fff;
+    font-size: 36px;
+    font-weight: 600;
+  }
+  .center .btns button{
+    height: 45px;
+    width: 100px;
+    font-size: 15px;
+    font-weight: 500;
+  }
   /*icones da loja*/
 
   .block-store-icons > div{
