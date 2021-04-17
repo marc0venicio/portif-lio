@@ -34,3 +34,10 @@ var swiper = new Swiper('.swiper-container', {
         el: '.swiper-pagination',
     },
 });
+
+/*vanilha */
+
+VanillaTilt.init(document.querySelectorAll(".box-parceiro"), {
+    max: 25,
+    speed: 400
+});

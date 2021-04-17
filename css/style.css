@@ -58,7 +58,7 @@ nav{
 /* main banner*/
 
 .img {
-    background-image: url(../img/banner-eu.jpg);
+    background-image: url(../img/banner.jpg);
     width: 100%;
     height: 100vh;
     background-size: cover;
@@ -140,7 +140,7 @@ nav{
 }
 
 .section-blocks > div {
-    flex: 1 1 200px;
+    flex: 1 1 300px;
     margin: 50px 20px;
     border-radius: 5px;
     text-align: center;
@@ -151,7 +151,7 @@ nav{
 }
 
 .section-blocks > div:hover {
-    flex: 1 1 150px;
+    flex: 1 1 250px;
     background: rgb(243, 13, 205);
     color: #fff;
 }
@@ -474,6 +474,127 @@ svg circle:nth-child(2){
   box-shadow: rgb(215, 15, 233) 0px 5px 15px;
 }
 
+/*parceiros*/
+.secao-parceiros{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  transform-style: preserve-3d;
+}
+
+.secao-parceiros h2{
+  color: rgb(215, 15, 233);
+}
+
+.secao-parceiros .box-parceiro{
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 40px;
+  background: rgb(24, 24, 24);
+  border-radius: 20px;
+  transform-style: preserve-3d;
+}
+
+.secao-parceiros .box-parceiro::before{
+  content: 'OVER';
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 5em;
+  font-weight: 900;
+  color: #fff;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+
+
+.secao-parceiros .box-parceiro::after{
+  content: 'LORD';
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 5em;
+  font-weight: 900;
+  color: #fff;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.secao-parceiros .box-parceiro:hover::before, .secao-parceiros .box-parceiro:hover::after{
+  opacity: 0.04;
+}
+
+.secao-parceiros .box-parceiro .name{
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  transform-style: preserve-3d;
+  transform: translate3d(0,0,75px);
+  transition: 0.5s;
+  opacity: 0;
+  z-index: 10;
+}
+
+.secao-parceiros .box-parceiro:hover .name{
+  top: 40px;
+  opacity: 1;
+}
+
+.secao-parceiros .box-parceiro .pointer{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform-style: preserve-3d;
+  transform: translate3d(-50%,0,75px);
+  color: #fff;
+  background-color: #313131;
+  padding: 10px 25px;
+  border-radius: 30px;
+  transition: 0.5s;
+  opacity: 0;
+  z-index: 10;
+}
+
+.secao-parceiros .box-parceiro:hover .pointer{
+  opacity: 1;
+  bottom: 30px;
+}
+
+.secao-parceiros .box-parceiro .circle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  transition: 0.5s;
+  background: rgb(31, 30, 30);
+  transform-style: preserve-3d;
+  transform: translate3d(-50%,-50%,50px);
+  z-index: 10;
+  opacity: 1;
+  box-shadow:rgb(215, 15, 233) 0px 5px 15px;
+}
+
+.secao-parceiros .box-parceiro .parceiro{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 300px;
+  transition: 0.5s;
+  z-index: 11;
+  transform-style: preserve-3d;
+  transform: translate3d(-50%,-50%,50px) rotate(-15deg);
+}
+
 /*title question*/
 
 .title-question{
@@ -481,7 +602,7 @@ svg circle:nth-child(2){
   width: 100%;
   height: 100%;
   padding-top:20em;
-  background: url('../img/banner-eu\ portifolio-sem-fundo.png');
+  background: url('../img/simbolo.png');
   background-size:100%;
   background-position:bottom ;
   background-repeat: no-repeat;
