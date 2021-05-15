@@ -49,3 +49,5 @@ VanillaTilt.init(document.querySelectorAll(".box-parceiro"), {
     max: 25,
     speed: 400
 });
+
+/**script contato */
