@@ -88,6 +88,7 @@ nav .menu {
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
+<<<<<<< HEAD
     font: bold;
 }
 
@@ -96,6 +97,14 @@ nav .menu {
 }
 
 .menu ul {
+=======
+    font:bold;
+  }
+  .menu .logo img{
+    width: 170px;
+  }
+  .menu ul{
+>>>>>>> 13bf2f17e66d89219ad8c7b628c940b4516e3f87
     display: inline-flex;
     align-items: center;
 }
@@ -165,8 +174,12 @@ nav .menu {
     font-size: 55px;
     font-weight: 600;
 }
+<<<<<<< HEAD
 
 .center .sub_title {
+=======
+.center .sub_title{
+>>>>>>> 13bf2f17e66d89219ad8c7b628c940b4516e3f87
     color: #fff;
     font-size: 52px;
     font-weight: 600;
@@ -223,7 +236,11 @@ nav .menu {
     /**/
 }
 
+<<<<<<< HEAD
 .section-blocks>div {
+=======
+.section-blocks > div {
+>>>>>>> 13bf2f17e66d89219ad8c7b628c940b4516e3f87
     flex: 1 1 300px;
     margin: 50px 20px;
     border-radius: 5px;
@@ -234,7 +251,11 @@ nav .menu {
     color: #fff;
 }
 
+<<<<<<< HEAD
 .section-blocks>div:hover {
+=======
+.section-blocks > div:hover {
+>>>>>>> 13bf2f17e66d89219ad8c7b628c940b4516e3f87
     flex: 1 1 250px;
     background: rgb(243, 13, 205);
     color: #fff;
@@ -513,6 +534,7 @@ svg circle:nth-child(2) {
 }
 
 .card:nth-child(1) svg circle:nth-child(2) {
+<<<<<<< HEAD
     stroke-dashoffset: calc(440px - (440px * 100)/100);
 }
 
@@ -522,6 +544,17 @@ svg circle:nth-child(2) {
 
 .card:nth-child(3) svg circle:nth-child(2) {
     stroke-dashoffset: calc(440px - (440px * 100)/100);
+=======
+  stroke-dashoffset: calc(440px - (440px * 100)/100);
+}
+
+.card:nth-child(2) svg circle:nth-child(2) {
+  stroke-dashoffset: calc(440px - (440px * 100)/100);
+}
+
+.card:nth-child(3) svg circle:nth-child(2) {
+  stroke-dashoffset: calc(440px - (440px * 100)/100);
+>>>>>>> 13bf2f17e66d89219ad8c7b628c940b4516e3f87
 }
 
 
@@ -565,8 +598,197 @@ svg circle:nth-child(2) {
     box-shadow: rgb(215, 15, 233) 0px 5px 15px;
 }
 
+<<<<<<< HEAD
 
 /*parceiros*/
+=======
+/*parceiros*/
+.secao-parceiros{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  transform-style: preserve-3d;
+}
+
+.secao-parceiros h2{
+  color: rgb(215, 15, 233);
+}
+
+.secao-parceiros .box-parceiro{
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 40px;
+  background: rgb(24, 24, 24);
+  border-radius: 20px;
+  transform-style: preserve-3d;
+}
+
+.secao-parceiros .box-parceiro::before{
+  content: 'OVER';
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 5em;
+  font-weight: 900;
+  color: #fff;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+
+
+.secao-parceiros .box-parceiro::after{
+  content: 'LORD';
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 5em;
+  font-weight: 900;
+  color: #fff;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.secao-parceiros .box-parceiro:hover::before, .secao-parceiros .box-parceiro:hover::after{
+  opacity: 0.04;
+}
+
+.secao-parceiros .box-parceiro .name{
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  transform-style: preserve-3d;
+  transform: translate3d(0,0,75px);
+  transition: 0.5s;
+  opacity: 0;
+  z-index: 10;
+}
+
+.secao-parceiros .box-parceiro:hover .name{
+  top: 40px;
+  opacity: 1;
+}
+
+.secao-parceiros .box-parceiro .pointer{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform-style: preserve-3d;
+  transform: translate3d(-50%,0,75px);
+  color: #fff;
+  background-color: #313131;
+  padding: 10px 25px;
+  border-radius: 30px;
+  transition: 0.5s;
+  opacity: 0;
+  z-index: 10;
+}
+
+.secao-parceiros .box-parceiro:hover .pointer{
+  opacity: 1;
+  bottom: 30px;
+}
+
+.secao-parceiros .box-parceiro .circle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  transition: 0.5s;
+  background: rgb(31, 30, 30);
+  transform-style: preserve-3d;
+  transform: translate3d(-50%,-50%,50px);
+  z-index: 10;
+  opacity: 1;
+  box-shadow:rgb(215, 15, 233) 0px 5px 15px;
+}
+
+.secao-parceiros .box-parceiro .parceiro{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 300px;
+  transition: 0.5s;
+  z-index: 11;
+  transform-style: preserve-3d;
+  transform: translate3d(-50%,-50%,50px) rotate(-15deg);
+}
+
+/*Timeline*/
+.container-timeline {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+  background-color: #111;
+}
+
+.timeline {
+  width: 80%;
+  height: auto;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.timeline ul {
+  list-style: none;
+}
+.timeline ul li {
+  padding: 20px;
+  background-color: #1e1f22;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.timeline ul li:last-child {
+  margin-bottom: 0;
+}
+.timeline-content h1 {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.timeline-content p {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 300;
+}
+.timeline-content .date {
+  font-size: 12px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+/*title question*/
+
+.title-question{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-top:20em;
+  background: url('../img/simbolo.png');
+  background-size:100%;
+  background-position:bottom ;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+>>>>>>> 13bf2f17e66d89219ad8c7b628c940b4516e3f87
 
 .secao-parceiros {
     position: relative;
@@ -712,6 +934,7 @@ svg circle:nth-child(2) {
     list-style: none;
 }
 
+<<<<<<< HEAD
 .timeline ul li {
     padding: 20px;
     background-color: #1e1f22;
@@ -722,6 +945,61 @@ svg circle:nth-child(2) {
 
 .timeline ul li:last-child {
     margin-bottom: 0;
+=======
+/*parte responsiva*/
+@media only screen and (min-width: 768px) {
+  .timeline:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: gray;
+  }
+  .timeline ul li {
+    width: 50%;
+    position: relative;
+    margin-bottom: 50px;
+  }
+  .timeline ul li:nth-child(odd) {
+    float: left;
+    clear: right;
+    transform: translateX(-30px);
+    border-radius: 20px 0px 20px 20px;
+  }
+  .timeline ul li:nth-child(even) {
+    float: right;
+    clear: left;
+    transform: translateX(30px);
+    border-radius: 0px 20px 20px 20px;
+  }
+  .timeline ul li::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: gray;
+    top: 0px;
+  }
+  .timeline ul li:nth-child(odd)::before {
+    transform: translate(50%, -50%);
+    right: -30px;
+  }
+  .timeline ul li:nth-child(even)::before {
+    transform: translate(-50%, -50%);
+    left: -30px;
+  }
+  .timeline-content .date {
+    position: absolute;
+    top: -30px;
+  }
+  .timeline ul li:hover::before {
+    background-color: aqua;
+  }
+>>>>>>> 13bf2f17e66d89219ad8c7b628c940b4516e3f87
 }
 
 .timeline-content h1 {
@@ -868,6 +1146,7 @@ li,
     font-size: 14px;
 }
 
+<<<<<<< HEAD
 
 /*parte responsiva*/
 
@@ -1299,4 +1578,289 @@ li,
     #title-text {
         margin-bottom: 75px;
     }
+=======
+@media (max-width: 425px){
+  /*menu mobile*/
+  html, body {
+	  overflow-x:hidden;
+	} 
+  nav {
+		height: 4em;
+	}
+  .btn-menumobile{
+    display: block !important;
+  }
+  
+  .logo img{
+    width: 150px;
+  }
+  .menu ul {
+		position: absolute;
+		display: none;
+    margin-top: -40px;
+    margin-left: -8px;
+    font-size: 20px;
+	}
+
+	.menu ul li {
+		display: block;
+    width: 400px;
+    align-items: center;
+		background-color: rgb(20, 20, 20);
+		border-top: 1px solid #CCC;
+    margin: 0px;
+	}
+
+	.menu ul li a {
+		font-size: 1em;
+	}
+	.open {
+    margin-top: 0px;
+		display: block !important;
+	}
+  /*icones da loja*/
+
+  .block-store-icons > div{
+    flex: 1 1 130px;
+    margin: 10px;
+    background: rgb(24, 24, 24);
+    border-radius: 5px;
+    box-shadow: rgb(215, 15, 233) 0px 5px 15px;
+    transition: 0.5s;
+  }
+
+  .block-store-icons > div h3{
+    font-size: 0.85em;
+  }
+  
+  .block-store-icons > div p{
+    font-size: 0.5em;
+  }
+  /*parte das nuvens*/
+  .title-question{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-top:8em;
+    background: url('../img/banner-eu\ portifolio-sem-fundo.png');
+    background-size:100%;
+    background-position:bottom ;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title-question #title-text{
+    position: relative;
+    font-size: 5em;
+  }
+
+  #title-text{
+    margin-bottom: 75px;
+  }
+}
+
+@media (max-width: 375px){
+  /*menu mobile*/
+  html, body {
+	  overflow-x:hidden;
+	} 
+  nav {
+		height: 4em;
+	}
+  .btn-menumobile{
+    display: block !important;
+  }
+  
+  .logo img{
+    width: 150px;
+  }
+  .menu ul {
+		position: absolute;
+		display: none;
+    margin-top: -10px;
+    margin-left: -20px;
+    font-size: 15px;
+	}
+
+	.menu ul li {
+		display: block;
+    width: 400px;
+    align-items: center;
+		background-color: rgb(20, 20, 20);
+		border-top: 1px solid #CCC;
+    margin: 0px;
+	}
+
+	.menu ul li a {
+		font-size: 1em;
+	}
+  /*banner*/
+
+  .center .title{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 600;
+  }
+
+  .center .sub_title{
+    color: #fff;
+    font-size: 36px;
+    font-weight: 600;
+  }
+  .center .btns button{
+    height: 45px;
+    width: 100px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+	.open {
+    margin-top: 0px;
+		display: block !important;
+	}
+  /*icones da loja*/
+
+  .block-store-icons > div{
+    flex: 1 1 130px;
+    margin: 10px;
+    background: rgb(24, 24, 24);
+    border-radius: 5px;
+    box-shadow: rgb(215, 15, 233) 0px 5px 15px;
+    transition: 0.5s;
+  }
+
+  .block-store-icons > div h3{
+    font-size: 0.85em;
+  }
+  
+  .block-store-icons > div p{
+    font-size: 0.5em;
+  }
+  /*parte das nuvens*/
+  .title-question{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-top:8em;
+    background: url('../img/banner-eu\ portifolio-sem-fundo.png');
+    background-size:100%;
+    background-position:bottom ;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title-question #title-text{
+    position: relative;
+    font-size: 5em;
+  }
+
+  #title-text{
+    margin-bottom: 75px;
+  }
+}
+
+@media (max-width: 320px){
+  /*menu mobile*/
+  html, body {
+	  overflow-x:hidden;
+	} 
+  nav {
+		height: 4em;
+	}
+  .btn-menumobile{
+    display: block !important;
+  }
+  
+  .logo img{
+    width: 150px;
+  }
+  .menu ul {
+		position: absolute;
+		display: none;
+    margin-top: -10px;
+    margin-left: -20px;
+    font-size: 15px;
+	}
+
+	.menu ul li {
+		display: block;
+    width: 400px;
+    align-items: center;
+		background-color: rgb(20, 20, 20);
+		border-top: 1px solid #CCC;
+    margin: 0px;
+	}
+
+	.menu ul li a {
+		font-size: 1em;
+	}
+	.open {
+    margin-top: 0px;
+		display: block !important;
+	}
+
+  /*banner*/
+
+  .center .title{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 600;
+  }
+
+  .center .sub_title{
+    color: #fff;
+    font-size: 36px;
+    font-weight: 600;
+  }
+  .center .btns button{
+    height: 45px;
+    width: 100px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  /*icones da loja*/
+
+  .block-store-icons > div{
+    flex: 1 1 130px;
+    margin: 10px;
+    background: rgb(24, 24, 24);
+    border-radius: 5px;
+    box-shadow: rgb(215, 15, 233) 0px 5px 15px;
+    transition: 0.5s;
+  }
+
+  .block-store-icons > div h3{
+    font-size: 0.85em;
+  }
+  
+  .block-store-icons > div p{
+    font-size: 0.5em;
+  }
+  /*parte das nuvens*/
+  .title-question{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-top:8em;
+    background: url('../img/banner-eu\ portifolio-sem-fundo.png');
+    background-size:100%;
+    background-position:bottom ;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title-question #title-text{
+    position: relative;
+    font-size: 5em;
+  }
+
+  #title-text{
+    margin-bottom: 75px;
+  }
+>>>>>>> 13bf2f17e66d89219ad8c7b628c940b4516e3f87
 }

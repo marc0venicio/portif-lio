@@ -48,6 +48,10 @@ var swiper = new Swiper('.swiper-container', {
 VanillaTilt.init(document.querySelectorAll(".box-parceiro"), {
     max: 25,
     speed: 400
+<<<<<<< HEAD
 });
 
 /**script contato */
+=======
+});
+>>>>>>> 13bf2f17e66d89219ad8c7b628c940b4516e3f87
